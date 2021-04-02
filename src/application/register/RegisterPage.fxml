@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.Button?>
+
+<BorderPane
+	fx:controller="application.register.RegisterPageController"
+	xmlns:fx="http://javafx.com/fxml" fx:id="parent">
+
+	<top>
+		<BorderPane styleClass="header-section">
+			<left>
+				<Label id="header-text"
+					text="Welcome to BANK of DIPTI"></Label>
+			</left>
+		</BorderPane>
+	</top>
+
+	<center>
+		<GridPane alignment="center" hgap="10" vgap="10">
+			<padding>
+				<Insets top="30" right="30" bottom="30" left="30" />
+			</padding>
+
+
+			<Text fx:id="logintext" text="            Register your account" GridPane.columnIndex="0"
+				GridPane.rowIndex="0" GridPane.columnSpan="3"></Text>
+
+			<Text text="Name: " GridPane.rowIndex="1"
+				GridPane.columnIndex="0"></Text>
+
+			<TextField fx:id="name" GridPane.rowIndex="1"
+				GridPane.columnIndex="1"></TextField>
+
+			<Text text="Address: " GridPane.rowIndex="2"
+				GridPane.columnIndex="0"></Text>
+
+			<TextField fx:id="address" GridPane.rowIndex="2"
+				GridPane.columnIndex="1"></TextField>
+
+			<Text text="Contact Number: " GridPane.rowIndex="3"
+				GridPane.columnIndex="0"></Text>
+
+			<TextField fx:id="phone" GridPane.rowIndex="3"
+				GridPane.columnIndex="1"></TextField>
+
+			<Text text="Username: " GridPane.rowIndex="4"
+				GridPane.columnIndex="0"></Text>
+
+			<TextField fx:id="uname" GridPane.rowIndex="4"
+				GridPane.columnIndex="1"></TextField>
+
+			<Text text="Password: " GridPane.rowIndex="5"
+				GridPane.columnIndex="0"></Text>
+
+			<PasswordField fx:id="pass" GridPane.rowIndex="5"
+				GridPane.columnIndex="1"></PasswordField>
+
+			<Text text="Initial deposit: " GridPane.rowIndex="6"
+				GridPane.columnIndex="0"></Text>
+
+			<TextField fx:id="iDeposit" GridPane.rowIndex="6"
+				GridPane.columnIndex="1"></TextField>
+
+			<Button fx:id="registerButton" text="Register"
+				GridPane.rowIndex="7" GridPane.columnIndex="0" onAction="#register"></Button>
+
+			<Button fx:id="loginButton" text="Back to login"
+				GridPane.rowIndex="7" GridPane.columnIndex="1" onAction="#login"></Button>
+ 
+
+
+		</GridPane>
+	</center>
+
+
+	<bottom>
+		<HBox id="footer-section">
+			<Label text="Copyright 2021 BOD"></Label>
+		</HBox>
+	</bottom>
+
+</BorderPane>
+
+

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<GridPane
+	fx:controller="application.transactions.update.UpdateController"
+	xmlns:fx="http://javafx.com/fxml" hgap="10" vgap="10">
+	<padding>
+		<Insets top="100" left="75" />
+	</padding>
+
+
+	<Button fx:id="updatepassword" text="Update Password"
+		onAction="#updatePassword" GridPane.columnIndex="0"
+		GridPane.rowIndex="0"></Button>
+	<Button text="Update Address" onAction="#updateAddress"
+		GridPane.columnIndex="1" GridPane.rowIndex="0"></Button>
+	<Button text="Update Phone Number" onAction="#updatePhone"
+		GridPane.columnIndex="2" GridPane.rowIndex="0"></Button>
+
+
+	<GridPane fx:id="action" GridPane.columnIndex="0"
+		GridPane.rowIndex="2" GridPane.columnSpan="3">
+
+	</GridPane>
+
+</GridPane>
+
+

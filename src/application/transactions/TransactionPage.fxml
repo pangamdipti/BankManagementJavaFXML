@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.Button?>
+
+
+<BorderPane
+	fx:controller="application.transactions.TransactionPageController"
+	xmlns:fx="http://javafx.com/fxml">
+
+
+	<top>
+		<BorderPane styleClass="header-section">
+			<left>
+				<Label alignment="center" id="header-text"
+					text="Welcome to BANK of DIPTI"></Label>
+			</left>
+			<right>
+				<Button fx:id="logoutButton" text="Log Out"
+					onAction="#logout"></Button>
+			</right>
+
+		</BorderPane>
+
+	</top>
+
+	<left>
+		<VBox spacing="10" styleClass="sidebar-section">
+			<padding>
+				<Insets top="25" right="25" bottom="25" left="25" />
+			</padding>
+			<Button text="Deposit" onAction="#deposit"></Button>
+			<Button text="Transfer" onAction="#transfer"></Button>
+			<Button text="Last 5 transactions"
+				onAction="#lastTransactions"></Button>
+			<Button text="Update details" onAction="#update"></Button>
+			<Button text="User information" onAction="#userInfo"></Button>
+
+		</VBox>
+	</left>
+
+	<center>
+		<GridPane styleClass="content-section" fx:id="actionTarget">
+		</GridPane>
+	</center>
+
+	<bottom>
+		<HBox id="footer-section">
+			<Label text="Copyright 2021 BOD"></Label>
+		</HBox>
+	</bottom>
+</BorderPane>
+

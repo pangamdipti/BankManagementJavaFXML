@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<GridPane
+	fx:controller="application.transactions.update.phone.PhoneController"
+	xmlns:fx="http://javafx.com/fxml" hgap="5" vgap="5">
+	
+	<Text text="New Phone " GridPane.rowIndex="0" GridPane.columnIndex="0"></Text>
+	<TextField fx:id="newPhone" GridPane.rowIndex="0" GridPane.columnIndex="1"></TextField>
+	
+	<Button fx:id="changePhone" text="Change Phone" onAction="#changePhone"
+	GridPane.rowIndex="1" GridPane.columnIndex="0"></Button>
+	
+	<Text fx:id="act" GridPane.rowIndex="2" GridPane.columnIndex="0"></Text>
+
+</GridPane>

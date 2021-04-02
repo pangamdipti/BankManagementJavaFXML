@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.Button?>
+
+
+<GridPane
+	fx:controller="application.transactions.lasttransactions.LastTransactionsController"
+	xmlns:fx="http://javafx.com/fxml" hgap="10" vgap="10">
+	<padding>
+		<Insets top="100" left="75" />
+	</padding>
+
+
+	<Button fx:id="lastTransactionButton"
+		text="Show last 5 transactions" onAction="#showTransaction"
+		GridPane.columnSpan="3" GridPane.rowIndex="0"
+		GridPane.columnIndex="0"></Button>
+
+	<Text fx:id="lastTransactionDisplay" GridPane.rowIndex="1"
+		GridPane.columnIndex="0" GridPane.columnSpan="7"/>
+
+
+</GridPane>
+
